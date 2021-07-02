@@ -1,4 +1,4 @@
-ul {
+ nav ul {
     list-style-type:none;
     margin: 0;
     padding: 0;
@@ -9,13 +9,13 @@ ul {
     
   }
   
-  li {
+  nav ul li {
     float:left;
     list-style: none;
     position: relative;
   }
   
-  li a {
+  nav ul li a {
     display: block;
     color: black;
     text-align: center;
@@ -23,7 +23,7 @@ ul {
     text-decoration: none;
   }
 
-  li ul {
+  nav ul li ul {
     display: none;
     position:absolute;
     background-color: white;
@@ -32,23 +32,23 @@ ul {
     
   }
 
-  li:hover ul {
+  nav ul li:hover ul {
     display: block;
   
   }
 
-  li ul li {
+  nav ul li ul li {
     width: 150px;
     border-radius: 4px;
     
   }
 
-  li ul li a {
+  nav ul li ul li a {
     padding: 14px 16px;
     
   }
 
-  li ul li a:hover {
+  nav ul li ul li a:hover {
     background-color: #e9b567;
     
   }
