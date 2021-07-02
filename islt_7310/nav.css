@@ -4,11 +4,13 @@ nav {
     background-color: white;
 }
 
-nav pn{
+nav p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     font-size: 24px;
     float: left;
+    padding: 0px 20px;
+    line-height: 55px;
 
 }
 
@@ -32,14 +34,15 @@ nav ul li {
   
 nav ul li a {
     display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-    text-align: center;
-    padding: 14px 16px;
+    font-size: 14px;
+    padding: 22px 14px;
     text-decoration: none;
   }
 
 nav ul li ul {
-    display: none;
+    display: block;
     position:absolute;
     background-color: white;
     padding: 5px;
