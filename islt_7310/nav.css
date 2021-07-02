@@ -11,6 +11,8 @@ ul {
   
   li {
     float:left;
+    list-style: none;
+    position: relative;
   }
   
   li a {
@@ -19,4 +21,34 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+
+  li ul {
+    display: none;
+    position:absolute;
+    background-color: white;
+    padding: 5px;
+    border-radius: 0px 0px 4px 4px;
+    
+  }
+
+  li:hover ul {
+    display: block;
+  
+  }
+
+  li ul li {
+    width: 150px;
+    border-radius: 4px;
+    
+  }
+
+  li ul li a {
+    padding: 14px 16px;
+    
+  }
+
+  li ul li a:hover {
+    background-color: #e9b567;
+    
   }
