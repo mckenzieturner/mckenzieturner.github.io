@@ -16,8 +16,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 .wrapper {
     display:grid;
     gap: 5px;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-areas: 5fr 20fr 5fr
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
       "nav    content ad"
