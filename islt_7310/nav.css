@@ -4,7 +4,7 @@
 }
 
 .sidenav {
-    width: 100pX;
+    width: 50pX;
     height: 40px;
     position: fixed;
     z-index: 1;
@@ -18,7 +18,7 @@
     color: black;
     font-size: 24px;
     float: left;
-    line-height: 150px;
+    line-height: 50px;
     padding: 0px 20px;
 
 }
@@ -65,7 +65,7 @@
   }
 
 .sidenav ul li ul li {
-    width: 150px;
+    width: 50px;
     border-radius: 4px;
     
   }
