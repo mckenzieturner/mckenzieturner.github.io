@@ -44,8 +44,7 @@ blockquote {
     gap: 20px;
     grid-template-areas:
       "header header  header"
-        "nav    content sidebar"
-        "nav    content sidebar"
+        "nav    nav   sidebar"
+        "content   content sidebar"
         "footer footer  footer"
   }
-  
