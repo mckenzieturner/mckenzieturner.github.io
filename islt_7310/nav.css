@@ -1,11 +1,11 @@
 * {
-    margin:50px;
+    margin:20px;
     padding:0;
 }
 
 .sidenav {
-    width: 100pX;
-    height: 40px;
+    width: 40pX;
+    height: 80px;
     position: fixed;
     z-index: 1;
     top: 0;
