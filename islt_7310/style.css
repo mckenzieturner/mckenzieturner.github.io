@@ -21,7 +21,9 @@ footer {
 		}
 
 .wrapper * {
-			background: orange;
+			background: rgb(228, 226, 140);
+            border-color: #e9b567;
+            border-style: dashed;
 			display: flex;
 			justify-content: center;
 			align-items: center;
