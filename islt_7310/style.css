@@ -43,8 +43,11 @@ blockquote {
     display: grid;
     gap: 20px;
     grid-template-areas:
-      "header header  header"
-        "nav    nav   sidebar"
-        "content   content sidebar"
-        "footer footer  footer"
+    "header header  header"
+    "nav    nav sidebar"
+    "content    content sidebar"
+    "footer footer  footer"
+  }
+  nav ul {
+    flex-direction: column;
   }
