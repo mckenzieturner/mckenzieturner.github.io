@@ -61,8 +61,8 @@ nav ul {
 
   .wrapper {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 25% auto 25%;
     width: 100%;
     background-color: rgb(228, 226, 140);
     align-items: center;
