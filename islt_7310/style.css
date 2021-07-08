@@ -9,6 +9,14 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 30px;
     padding: 0px 10px;
 }
+blockquote {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 24px;
+    float: left;
+    line-height: 30px;
+    padding: 0px 10px;
+}
 
 .main-head {
     grid-area: header;
