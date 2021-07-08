@@ -55,15 +55,11 @@ blockquote {
 nav ul {
   flex-direction: column;
 }
-  html{ 
-      box-sizing: border-box;
-  }
 
   .wrapper {
     display: grid;
     grid-template-columns: 50px auto 50px;
     grid-template-rows: 25% auto 25%;
-    width: 100%;
     background-color: rgb(228, 226, 140);
     align-items: center;
     margin-bottom: 1px;
@@ -71,7 +67,7 @@ nav ul {
     justify-content: center;
     grid-template-areas:
     "header header  header"
-    "nav    nav sidebar"
+    "nav    nav     sidebar"
     "content  content sidebar"
     "footer footer  footer"
   }
