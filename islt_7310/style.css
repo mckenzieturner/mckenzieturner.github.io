@@ -1,5 +1,6 @@
 
 h1 {color: #e9b567;}
+
 p {
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
@@ -22,9 +23,11 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .side {
     grid-area: sidebar;
+    background-color: rgb(228, 226, 140);
   }
     .main-footer {
     grid-area: footer;
+    background-color: rgb(228, 226, 140);
 
   }
   
