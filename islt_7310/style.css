@@ -13,52 +13,43 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
-body {
-    margin: 40px;
+.wrapper {
+    display:grid;
+    gap: 20px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
+
+  
+.main-head {
+    grid-area: header;
+    background-color: rgb(228, 226, 140);
   }
-  
-  .sidebar {
-      grid-area: sidebar;
-    }
-  
-    .content {
-      grid-area: content;
-    }
-  
-    .header {
-      grid-area: header;
-    }
-  
-    .footer {
-      grid-area: footer;
-    }
-  
-  
-    .wrapper {
-        width: 100%;
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 20% auto 20%;
-      grid-template-rows: 50px auto 50px;
-      grid-template-areas:
-      "....... header header"
-      "sidebar content content"
-      "footer  footer  footer";
-      background-color: rgb(228, 226, 140);
-      color: black;
-    }
-  
-  
-  .box {
-    background-color:rgb(228, 226, 140);
-    color: black;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 25px;
+  .content {
+    grid-area: content;
   }
-  
-  .header,
-  .footer {
+  .main-nav {
+    grid-area: nav;
+    background-color: rgb(228, 226, 140);
+  }
+  .side {
+    grid-area: sidebar;
+    background-color: rgb(228, 226, 140);
+  }
+  .ad {
+    grid-area: ad;
+  }
+  .main-footer {
+    grid-area: footer;
     background-color: rgb(228, 226, 140);
   }
   
+
+          
