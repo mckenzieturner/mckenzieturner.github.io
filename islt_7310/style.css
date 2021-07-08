@@ -15,8 +15,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 .wrapper {
     display:grid;
-    gap: 5px;
-    grid-template-columns: 24% auto 24%;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 5fr 20fr 5fr;
     grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
@@ -31,6 +32,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 .main-head {
     grid-area: header;
     background-color: rgb(228, 226, 140);
+    grid-column-start:1;
+    grid-column-end:4;
   }
   .content {
     grid-area: content;
@@ -49,7 +52,18 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   .main-footer {
     grid-area: footer;
     background-color: rgb(228, 226, 140);
+    grid-column-start:1;
+    grid-column-end:4
   }
+
+.wrapper *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    
+}
   
 
           
