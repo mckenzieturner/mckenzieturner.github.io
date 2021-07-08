@@ -20,27 +20,28 @@ blockquote {
     padding: 0px 10px;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 50px auto 50px;
-    grid-template-rows: 25% auto 25%;
-    background-color: rgb(228, 226, 140);
+.wrapper *{
+    display: flex;
     align-items: center;
     margin-bottom: 1px;
     margin-right: 1px;
     justify-content: center;
-    grid-template-areas:
-    "header header  header"
-    "nav    nav     sidebar"
-    "content  content sidebar"
-    "footer footer  footer"
+
   }
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 5fr 20fr 5fr;
+    grid-gap: 10px;
+    height:720px;
+}
+
 
 .main-head {
     grid-area: header;
     background-color: rgb(228, 226, 140);
-    grid-column: 1/ span 3;
-    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
   .content {
     grid-area: content;
@@ -63,12 +64,11 @@ blockquote {
     .main-footer {
     grid-area: footer;
     background-color: rgb(228, 226, 140);
-    grid-column: 1/span 3;
-    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
 
   }
 
 nav ul {
   flex-direction: column;
 }
-
