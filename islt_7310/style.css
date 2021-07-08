@@ -16,12 +16,12 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 .wrapper {
     display:grid;
     gap: 5px;
-    grid-template-columns: 50px auto 50px;
+    grid-template-columns: 24% auto 24%;
     grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
       "nav    content ad"
-      "footer footer  footer"
+      "footer footer  footer" ;
    }
    nav ul {
      flex-direction: column;
