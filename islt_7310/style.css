@@ -21,8 +21,8 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
-      "nav    content ad"
-      "footer footer  footer" ;
+      "nav    content sidebar"
+      "footer footer  footer" 
    }
    nav ul {
      flex-direction: column;
@@ -46,9 +46,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     grid-area: sidebar;
     background-color: rgb(228, 226, 140);
   }
-  .ad {
-    grid-area: ad;
-  }
+ 
   .main-footer {
     grid-area: footer;
     background-color: rgb(228, 226, 140);
