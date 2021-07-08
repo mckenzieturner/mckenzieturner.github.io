@@ -1,88 +1,33 @@
-* {
-    margin:50px;
-    padding:0;
+ul li {
+display: block;
+border: 3px dotted #e9b567;
+width: 75px;
+list-style-type: none;
+padding: 15px 15px 15px 25px;
+margin-bottom: 5px;
 }
 
-.sidenav {
-    width: 50pX;
-    height: 40px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left:0;
-    padding-top: 50px;
-}
-
-.sidenav p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-size: 24px;
-    float: left;
-    line-height: 50px;
-    padding: 0px 20px;
+ul li ul {
+  display: block;
+  width: 75px
 
 }
 
-.sidenav ul {
-    float:left;
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(228, 226, 140);
-    border-color: #e9b567;
-    border-style: dashed;
-    
-  }
-
-.sidenav ul li {
-    float:left;
-    list-style: none;
-    position: relative;
+  .vertical-menu {
+    width: 75px; 
   }
   
-.sidenav ul li a {
-    display: block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    font-size: 14px;
-    padding: 22px 14px;
+  .vertical-menu a {
+    background-color: rgb(228, 226, 140); 
+    color: black; 
+    padding: 12px; 
     text-decoration: none;
   }
-
-.sidenav ul li ul {
-    display: block;
-    position:absolute;
-    background-color: white;
-    padding: 5px;
-    border-radius: 0px 0px 4px 4px;
-    
-  }
-
-.sidenav ul li:hover ul {
-    display: block;
-    background-color: white;
   
+  .vertical-menu a:hover {
+    background-color: rgb(233, 232, 190); 
   }
-
-.sidenav ul li ul li {
-    width: 50px;
-    border-radius: 4px;
-    
+  
+  .vertical-menu a.active {
+    font-style: black; 
   }
-
-.sidenav ul li ul li a {
-    padding: 14px 16px;
-    
-  }
-
-.sidenav ul li ul li a:hover {
-    display: block;
-    background-color: white;
-    
-  }
-
-@media (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
