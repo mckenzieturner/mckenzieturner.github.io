@@ -1,37 +1,84 @@
 * {
-    margin:20px;
+    margin:50px;
     padding:0;
 }
 
 .sidenav {
-    width: 40pX;
-    height: 80px;
+    width: 100pX;
+    height: 40px;
     position: fixed;
     z-index: 1;
     top: 0;
     left:0;
     padding-top: 50px;
-    transition: 0.5s;
+}
+
+.sidenav p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 24px;
+    float: left;
+    line-height: 150px;
+    padding: 0px 20px;
 
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #e9b567;
-  display: block;
-  transition: 0.3s;
-}
+.sidenav ul {
+    float:left;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(228, 226, 140);
+    border-color: #e9b567;
+    border-style: dashed;
+    
+  }
 
-.sidenav a:hover {
-  color: white;
-}
+.sidenav ul li {
+    float:left;
+    list-style: none;
+    position: relative;
+  }
+  
+.sidenav ul li a {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 14px;
+    padding: 22px 14px;
+    text-decoration: none;
+  }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
+.sidenav ul li ul {
+    display: block;
+    position:absolute;
+    background-color: white;
+    padding: 5px;
+    border-radius: 0px 0px 4px 4px;
+    
+  }
+
+.sidenav ul li:hover ul {
+    display: block;
+  
+  }
+
+.sidenav ul li ul li {
+    width: 150px;
+    border-radius: 4px;
+    
+  }
+
+.sidenav ul li ul li a {
+    padding: 14px 16px;
+    
+  }
+
+.sidenav ul li ul li a:hover {
+    background-color: white;
+    
+  }
 
 @media (max-height: 450px) {
   .sidenav {padding-top: 15px;}
