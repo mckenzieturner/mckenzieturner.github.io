@@ -61,6 +61,7 @@
 
 .sidenav ul li:hover ul {
     display: block;
+    background-color: white;
   
   }
 
@@ -76,6 +77,7 @@
   }
 
 .sidenav ul li ul li a:hover {
+    display: block;
     background-color: white;
     
   }
