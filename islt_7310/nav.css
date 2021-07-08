@@ -4,6 +4,7 @@
 }
 
 nav{
+  grid-column: auto;
     width: 1005pX;
     height: 40px;
 }
