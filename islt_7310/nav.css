@@ -3,13 +3,17 @@
     padding:0;
 }
 
-nav{
-  grid-column: auto;
+.sidenav {
     width: 1005pX;
     height: 40px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    padding-top: 40px;
 }
 
-nav p {
+.sidenav p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     font-size: 24px;
@@ -19,7 +23,7 @@ nav p {
 
 }
 
-nav ul {
+.sidenav ul {
     float:left;
     list-style-type:none;
     margin: 0;
@@ -31,13 +35,13 @@ nav ul {
     
   }
 
-nav ul li {
+.sidenav ul li {
     float:left;
     list-style: none;
     position: relative;
   }
   
-nav ul li a {
+.sidenav ul li a {
     display: block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
@@ -46,7 +50,7 @@ nav ul li a {
     text-decoration: none;
   }
 
-nav ul li ul {
+.sidenav ul li ul {
     display: block;
     position:absolute;
     background-color: white;
@@ -55,23 +59,23 @@ nav ul li ul {
     
   }
 
-nav ul li:hover ul {
+.sidenav ul li:hover ul {
     display: block;
   
   }
 
-nav ul li ul li {
+.sidenav ul li ul li {
     width: 150px;
     border-radius: 4px;
     
   }
 
-nav ul li ul li a {
+.sidenav ul li ul li a {
     padding: 14px 16px;
     
   }
 
-nav ul li ul li a:hover {
-    background-color: #e9b567;
+.sidenav ul li ul li a:hover {
+    background-color: white;
     
   }
