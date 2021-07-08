@@ -8,16 +8,16 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     font-size: 24px;
     float: left;
-    line-height: 30px;
+    line-height: 20px;
     padding: 0px 10px;
 }
 
 
 .wrapper {
     display:grid;
-    gap: 20px;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas:
+    gap: 5px;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 5fr 20fr 5fr
       "header header  header"
       "nav    content sidebar"
       "nav    content ad"
