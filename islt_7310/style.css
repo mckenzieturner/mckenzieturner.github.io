@@ -1,6 +1,8 @@
 
 h1 {color: #e9b567;}
 
+main-head h1 {color: #e9b567;}
+
 p {
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
@@ -21,31 +23,47 @@ blockquote {
 .main-head {
     grid-area: header;
     background-color: rgb(228, 226, 140);
+    grid-column: 1/ span 3;
+    grid-row: 1;
   }
   .content {
     grid-area: content;
+    grid-column: 1/span 2;
+    grid-row: 3/span 4;
     
   }
   .main-nav {
     grid-area: nav;
     background-color: rgb(228, 226, 140);
+    grid-column:1/span 2;
+    grid-row: 2;
   }
   .side {
     grid-area: sidebar;
     background-color: rgb(228, 226, 140);
+    grid-column: 3;
+    grid-row: 2/span 3;
   }
     .main-footer {
     grid-area: footer;
     background-color: rgb(228, 226, 140);
+    grid-column: 1/span 3;
+    grid-row: 4;
 
   }
-  
+
 nav ul {
   flex-direction: column;
 }
-  
+  html{ 
+      box-sizing: border-box;
+  }
+
   .wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 50px auto 50px;
+    width: 100%;
     background-color: rgb(228, 226, 140);
     align-items: center;
     margin-bottom: 1px;
