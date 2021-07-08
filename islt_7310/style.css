@@ -40,6 +40,10 @@ blockquote {
 
   }
   
+nav ul {
+  flex-direction: column;
+}
+  
   .wrapper {
     display: flex;
     background-color: rgb(228, 226, 140);
@@ -53,8 +57,3 @@ blockquote {
     "content  content sidebar"
     "footer footer  footer"
   }
-  nav ul {
-    flex-direction: column;
-  }
-
-  h1 {color: #e9b567;}
