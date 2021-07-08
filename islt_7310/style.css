@@ -24,6 +24,7 @@ blockquote {
   }
   .content {
     grid-area: content;
+    
   }
   .main-nav {
     grid-area: nav;
@@ -40,12 +41,16 @@ blockquote {
   }
   
   .wrapper {
-    display: grid;
-    gap: 20px;
+    display: flex;
+    background-color: rgb(228, 226, 140);
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    justify-content: center;
     grid-template-areas:
     "header header  header"
     "nav    nav sidebar"
-    "content    content sidebar"
+    "content  content sidebar"
     "footer footer  footer"
   }
   nav ul {
