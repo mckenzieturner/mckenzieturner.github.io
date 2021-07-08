@@ -20,6 +20,22 @@ blockquote {
     padding: 0px 10px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 25% auto 25%;
+    background-color: rgb(228, 226, 140);
+    align-items: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    justify-content: center;
+    grid-template-areas:
+    "header header  header"
+    "nav    nav     sidebar"
+    "content  content sidebar"
+    "footer footer  footer"
+  }
+
 .main-head {
     grid-area: header;
     background-color: rgb(228, 226, 140);
@@ -56,18 +72,3 @@ nav ul {
   flex-direction: column;
 }
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: 50px auto 50px;
-    grid-template-rows: 25% auto 25%;
-    background-color: rgb(228, 226, 140);
-    align-items: center;
-    margin-bottom: 1px;
-    margin-right: 1px;
-    justify-content: center;
-    grid-template-areas:
-    "header header  header"
-    "nav    nav     sidebar"
-    "content  content sidebar"
-    "footer footer  footer"
-  }
