@@ -18,7 +18,7 @@ blockquote {
     padding: 0px 10px;
 }
 
-.main-head {
+.header {
     grid-area: header;
     background-color: rgb(228, 226, 140);
   }
@@ -30,7 +30,7 @@ blockquote {
     grid-area: nav;
     background-color: rgb(228, 226, 140);
   }
-  .side {
+  .sidebar {
     grid-area: sidebar;
     background-color: rgb(228, 226, 140);
   }
