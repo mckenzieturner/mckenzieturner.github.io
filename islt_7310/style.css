@@ -24,7 +24,7 @@ p {
     grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
-      "footer footer  footer" 
+      "footer footer  footer" ;
    }
    nav ul {
      flex-direction: row;
@@ -55,9 +55,7 @@ p {
     text-align: center;
   }
 
-
-
-@media print {
+  @media print {
     .main-head, .content, .main-footer{
       color: black;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -78,6 +76,8 @@ p {
 
 @media (max-width: 700px) {
   .grid {
+    background-color: rgb(228, 226, 140);
+    font-size: 18px;
     grid-template-areas:
       '.main-head'
       '.sidenav'
@@ -87,8 +87,10 @@ p {
   }
 }
 
-@media (max-width: 959px) {
+@media (max-width: 850px) {
   .grid {
+    background-color: rgb(228, 226, 140);
+    font-size: 18px;
     grid-template-areas:
     ".main-header .main-header  .main-header"
     ".sidenav    .content       .side"
