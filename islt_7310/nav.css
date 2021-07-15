@@ -10,6 +10,7 @@ ul {
   top: 10%;
   background-color: rgb(228, 226, 140);
   font-size: 24px;
+  list-style-type: none;
   }
 
   .sidenav a, .dropdown-btn {
@@ -29,8 +30,7 @@ ul {
   }
 
   .active {
-  background-color: r#e9b567;
-  color: black;
+  background-color: white;
   }
 
   .dropdown-container {
@@ -64,7 +64,6 @@ ul {
   #hamitems a:hover { background: #401408; }
   
     #hamnav label {
-      color: black(23, 0, 128);
       background: rgb(228, 226, 140);
       font-style:normal;
       font-size: 1.2em;
