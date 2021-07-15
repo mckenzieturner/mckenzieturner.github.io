@@ -20,7 +20,7 @@ p {
 .wrapper {
     display:grid;
     grid-template-columns: 15% auto 20%;
-    grid-template-rows: 10% auto 10%;
+    grid-template-rows: 10% auto 15%;
     grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
@@ -55,8 +55,14 @@ p {
     float:none;
     text-align: center;
   }
+  .grow { 
+    transition: all .2s ease-in-out; 
+    }
+    .grow:hover { 
+    transform: scale(1.7); 
+    }
 
-  @media print {
+@media print {
     .main-head, .content, .main-footer{
       color: black;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
