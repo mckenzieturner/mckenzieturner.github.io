@@ -20,7 +20,7 @@ p {
 .wrapper {
     display:grid;
     grid-template-columns: 15% auto 20%;
-    grid-template-rows: 10% auto 5%;
+    grid-template-rows: 10% auto 10%;
     grid-template-areas: 
       "header header  header"
       "nav    content sidebar"
@@ -50,7 +50,8 @@ p {
  
   .main-footer {
     grid-area: footer;
-    background-color: rgb(228, 226, 140);
+    background-image: url(img/footer.png);
+    background-size: cover;
     float:none;
     text-align: center;
   }
