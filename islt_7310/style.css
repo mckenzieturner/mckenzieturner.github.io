@@ -38,6 +38,7 @@ p {
   }
   .content {
     grid-area: content;
+    text-align: left;
   }
   .sidenav {
     grid-area: nav;
