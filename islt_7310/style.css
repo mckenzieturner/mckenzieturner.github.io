@@ -39,6 +39,8 @@ p {
   .content {
     grid-area: content;
     text-align: left;
+    padding-left: 15%;
+    padding-right: 20%;
   }
   .sidenav {
     grid-area: nav;
@@ -47,6 +49,8 @@ p {
   .side {
     grid-area: sidebar;
     background-color: rgb(228, 226, 140);
+    image-rendering: auto;
+
   }
  
   .main-footer {
@@ -63,24 +67,47 @@ p {
     transform: scale(1.7); 
     }
 
-@media print {
-    .main-head, .content, .main-footer{
-      font: black;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 14pt;
-    }
-    .side, .sidenav
-
-  article {
-    width: 100%!important;
-    padding: 0!important;
-    margin:0!important;
-
+    @media print {
+      * {
+          background: transparent !important;
+          color: #000 !important;
+          box-shadow: none !important;
+          text-shadow: none !important;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      
+      }
+  
+      h1 {
+          margin: 0;
+          padding: 0;
+      }
+  
+      ul {
+          padding-left: 0%;
+      }
+  
+      .wrapper { 
+          font-size: 30%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+      }
+  
+      .sidenav {
+          display: none;
+      }
+      .side {
+        display: none;
+      }
+      .main-footer {
+        display: none;
+      }
+      
+      @page {
+          margin: 1in;
+      }
+  
   }
-  @page {
-    margin: 1in;
-  }
-}
 
 @media (max-width: 700px) {
   .grid {
@@ -104,4 +131,53 @@ p {
     ".sidenav    .content       .side"
     ".main-footer .main-footer  .main-footer" ;
   }
+}
+
+
+figure, table {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bolder;
+}
+
+thead, tfoot {
+  background-color: rgb(219, 228, 185);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(176, 223, 235);
+}
+
+@media only screen and (max-width: 640px) {
+  th, td {
+      display: block;
+      background-color: white;
+  }
+
+  thead {
+      display: none;
+  }
+
+  table {
+      font-size: 110%;
+      border-collapse: collapse;
+  }
+
+  figcaption {
+      font-size: 150%;
+  }
+  
+  figcaption, tfoot {
+      font-weight: bold;
+  }
+
 }
