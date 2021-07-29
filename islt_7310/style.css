@@ -19,7 +19,7 @@ p {
 
 .wrapper {
     display:grid;
-    grid-template-columns: 15% auto 20%;
+    grid-template-columns: 18% auto 20%;
     grid-template-rows: 10% auto 15%;
     grid-template-areas: 
       "header header  header"
@@ -57,7 +57,6 @@ p {
     grid-area: footer;
     background-image: url(img/footer.png);
     background-size: cover;
-    float:none;
     text-align: center;
   }
   .grow { 

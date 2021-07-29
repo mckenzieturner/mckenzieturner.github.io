@@ -31,6 +31,25 @@
                 </ul>
         </div>
     </div>
+    <SCRIPT LANGUAGE="JavaScript">
+        
+        //Bread crumb script - Kevin Lynn Brown
+        //Duplicate directory names bug fix by JavaScriptKit.com
+        //Visit JavaScript Kit (http://javascriptkit.com) for script
+        
+        var path = "";
+        var href = document.location.href;
+        var s = href.split("/");
+        for (var i=2;i<(s.length-1);i++) {
+        path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+        }
+        i=s.length-1;
+        path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+        var url = window.location.protocol + "//" + path;
+        document.writeln(url);
+        //-->
+        </script>
+        
         <div class="main-head"><h1> McKenzie Turner</h1>
         </div>
     <div class="content">
@@ -39,7 +58,11 @@
         <h1> My Purpose</h1>
         <p>This purpose of this webpage is to inform viewers about myself and how my education is preparing me for my career. I want people to read this webpage and be able to look at my experiences and projects. I am proud to show my projects and give a glimpse of something I am passionate about. Although, I am still in school, I have had great experience so far in the workforce and I am excited for the future. There is still a lot to learn but I am always ready to jump in and learn. I want my future employers to look at this website and clearly see what my previous jobs have taught me. This goal of this website is for myself to feel confident about my experiences and show others what I have accomplished. This website is going to give you all the information you would need about me to understand what I am passionate about and what I want to pursue. </p>
     </div>
-    <div class="main-footer">McKenzie Turner  <div class="grow"> <img src="https://img.icons8.com/material-rounded/24/000000/mail.png"/> <a href="https://icons8.com/icon/86875/mail"></a></div> <a href="mailto:mckenzie.turner25@aol.com">mckenzie.turner25@aol.com</a> <div class="grow"> <img src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"/> <a href="https://icons8.com/icon/78382/phone"></a></div> #1111111111  &copy;2021</div>
+    <div class="main-footer">McKenzie Turner  <div class="grow"> <img src="https://img.icons8.com/material-rounded/24/000000/mail.png"/> <a href="https://icons8.com/icon/86875/mail"></a></div> <a href="mailto:mckenzie.turner25@aol.com">mckenzie.turner25@aol.com</a> <div class="grow"> <img src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"/> <a href="https://icons8.com/icon/78382/phone"></a></div>#1111111111  &copy;2021
+    <a href='https://freehitcounters.org/'>freehitcounters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2e07b0b55d75531a2bc34ae575bf45b4a5b2510f'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/851897/t/6"></script></div> 
+    <p text-align="center">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
+</div>
 </div>
 </body>
 </html> 
